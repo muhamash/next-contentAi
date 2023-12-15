@@ -1,7 +1,9 @@
-export default function Home() {
+import Nav from './components/nav'
+export default function Home ()
+{
   return (
     <div className="text-red-400">
-      hello world
+      <Nav/>
     </div>
   )
 }
