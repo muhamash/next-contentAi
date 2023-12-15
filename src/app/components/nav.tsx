@@ -1,6 +1,14 @@
 'use client'
 
 import { PhoneOutlined } from '@ant-design/icons';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+const handleLoginClick = () => {
+  const router = useRouter();
+  router.push('./login/login.tsx');
+};
+
 
 const Nav = () =>
 {
@@ -35,11 +43,11 @@ const Nav = () =>
                     </div>
                 </div>
                 {/* user log in */ }
-                <div>
-                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded shadow-md shadow-violet-200'>
+                <Link href={'./login/login.tsx'}>
+                    <a  onClick={() => console.log( 'clicked' )} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded shadow-md shadow-violet-200'>
                         Login
-                    </button>
-                </div>
+                    </a>
+                </Link>
             </div>
         </div>
     )
