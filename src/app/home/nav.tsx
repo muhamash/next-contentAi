@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 import { PhoneOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/navigation';
 // import Link from 'next/link';
@@ -52,9 +52,11 @@ const Nav = () =>
                 </div>
                 {/* user log in */ }
                 <div>
-                    <button  onClick={() => loginClick} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded shadow-md shadow-violet-200'>
+                    <Link href='/login'>
+                        <button  onClick={() => loginClick} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded shadow-md shadow-violet-200'>
                         Login
                     </button>
+                    </Link>
                 </div>
             </div>
         </div>

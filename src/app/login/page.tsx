@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import { Button, Checkbox, Form, Input } from 'antd';
 import TypingAnimation from '../../components/typingAnimation';
+import Link from 'next/link';
 
 const Login = () =>
 {
@@ -132,9 +133,11 @@ const Login = () =>
                                 <p className='font-OpenSans font-semibold'>
                                     Don@t have an account yet?
                                 </p>
+                                <Link href={'/register'}>
                                 <p className='font-OpenSans text-violet-600 font-semibold cursor-pointer hover:text-red-700'>
                                     Sign up
                                 </p>
+                                </Link>
                             </div>
                         </Form.Item>
                     </Form>
