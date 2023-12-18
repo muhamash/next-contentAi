@@ -1,7 +1,11 @@
-export default function Home() {
+'use client'
+
+import HomePage from './home/home';
+export default function Home ()
+{
   return (
     <div className="text-red-400">
-      hello world
+      <HomePage/>
     </div>
-  )
-}
+  );
+};
