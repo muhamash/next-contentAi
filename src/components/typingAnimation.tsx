@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useEffect } from 'react';
 
 interface TypingAnimationProps {
@@ -5,7 +7,7 @@ interface TypingAnimationProps {
 }
 
 const TypingAnimation: React.FC<TypingAnimationProps> = (props) => {
-    const message = props.message.trim(); // Trim any leading/trailing spaces
+    const message = props.message.trim();
     const [currentText, setCurrentText] = useState<string>('');
     const [isTyping, setIsTyping] = useState<boolean>(true);
 

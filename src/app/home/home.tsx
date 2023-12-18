@@ -1,9 +1,9 @@
 'use client'
 
-import Nav from "../components/nav";
+import Nav from "./nav";
 import React from "react"
 import {motion} from 'framer-motion'
-import Login from "../components/login/login";
+import Login from "../login/page";
 
 const HomePage = () => {
     return (
@@ -18,7 +18,6 @@ const HomePage = () => {
                 }}
             >
                 <Nav />
-                <Login/>
             </motion.div>
         </div>
     );
