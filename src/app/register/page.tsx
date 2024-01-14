@@ -143,8 +143,8 @@ const Register = () => {
           </Form.Item>
 
           <Form.Item
-            name="nickname"
-            label="Nickname"
+            name="userName"
+            label="User Name"
             tooltip="What do you want others to call you?"
             rules={[
               {

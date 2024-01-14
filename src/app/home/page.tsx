@@ -5,7 +5,8 @@ import React from "react"
 import {motion} from 'framer-motion'
 import Login from "../login/page";
 
-const HomePage = () => {
+const HomePage = () =>
+{
     return (
         <div>
             <motion.div

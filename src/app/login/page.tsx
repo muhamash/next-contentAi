@@ -114,16 +114,18 @@ const Login = () =>
                         >
                             <div className='flex items-center gap-10'>
                                 <div>
-                                     <Button
-                                    className='bg-violet-500 text-white font-OpenSans font-semibold shadow-md shadow-slate-400'
-                                    htmlType="submit">
-                                    Submit
+                                    <Button
+                                        className='bg-violet-500 text-white font-OpenSans font-semibold shadow-md shadow-slate-400'
+                                        htmlType="submit">
+                                        Submit
                                     </Button>
-                               </div>
+                                </div>
                                 <div>
-                                    <p className='text-violet-600 font-OpenSans font-semibold cursor-pointer hover:text-red-700 underline'>
-                                        Forgot password
-                                    </p>
+                                    <Link href={'/forgetPassword'}>
+                                        <p className='text-violet-600 font-OpenSans font-semibold cursor-pointer hover:text-red-700 underline'>
+                                            Forgot password
+                                        </p>
+                                    </Link>
                                 </div>
                             </div>
                         </Form.Item>
@@ -134,9 +136,9 @@ const Login = () =>
                                     Don@t have an account yet?
                                 </p>
                                 <Link href={'/register'}>
-                                <p className='font-OpenSans text-violet-600 font-semibold cursor-pointer hover:text-red-700'>
-                                    Sign up
-                                </p>
+                                    <p className='font-OpenSans text-violet-600 font-semibold cursor-pointer hover:text-red-700'>
+                                        Sign up
+                                    </p>
                                 </Link>
                             </div>
                         </Form.Item>
